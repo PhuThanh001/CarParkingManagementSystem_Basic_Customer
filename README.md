@@ -1,6 +1,6 @@
-# TREER Web-Application
+# CAR PARKING MANAGEMENT SYSTEM _ Csharp
 <div align="center">
-    <img src="https://github.com/emallrice/TreerAntV3-1/blob/main/images/logo.jpg" alt="TREER LOGO"/>
+    <img src="https://github.com/baemgao/CarParkingManagementSystem_Basic/blob/main/img/R.jpg" alt="Car parking management img"/>
 </div>
 
 ## Table of Contents
@@ -17,11 +17,8 @@
 </details>
 
 ## Introduction
-Treer is an online bonsai selling website with many different types of bonsai. In particular, Treer also provides an auction feature for special bonsai, giving customers the opportunity to own rare ornamental plants. and unique with reasonable price. Our project follow the 3-tier architecture model and use the following technologies:
+Within the framework of the PRN211 Software Engineering course at FPT University, we, a group of dedicated students, are actively immersed in a hands-on assignment focused on crafting a comprehensive Car Parking Management System. This project signifies a bridge between theoretical learning and practical application, allowing us to translate classroom concepts into a tangible real-world solution. The system's primary objective is to tackle the intricacies of urban parking by implementing efficient allocation algorithms, user-intuitive interfaces, secure payment gateways, and a role-based access control system comprising four roles: guest, member, staff, and admin. Through this endeavor, we not only refine our technical skills but also cultivate invaluable experience in collaborative teamwork and project implementation within the domain of software engineering.
 
-- JS, JSP, Boostrap to build up the front-end
-- Java to build up the back-end
-- MS SQL Server to store data
 <div align="center">
     <img src="https://github.com/emallrice/TreerAntV3-1/blob/main/images/TREER.png" alt="OVERALL SYSTEM ARCHITECTURE"/>
 </div>
