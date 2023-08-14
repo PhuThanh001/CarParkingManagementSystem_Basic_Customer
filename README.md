@@ -24,22 +24,22 @@ Within the framework of the PRN211 Software Engineering course at FPT University
 
 ## Tech Stack
 <div align="center">
-  <a href="https://learn.microsoft.com/en-us/dotnet/csharp/" target="blank" rel="noreferrer"><img src="#"/></a>
-  <a href="https://dotnet.microsoft.com/en-us/" target="blank" rel="noreferrer"><img src="#"/></a>
-  <a href="https://learn.microsoft.com/en-us/aspnet/entity-framework" target="blank" rel="noreferrer"><img src="#"/></a>
+  <a href="https://learn.microsoft.com/en-us/dotnet/csharp/" target="blank" rel="noreferrer">Csharp</a>
+  <a href="https://dotnet.microsoft.com/en-us/" target="blank" rel="noreferrer">dotnet</a>
+  <a href="https://learn.microsoft.com/en-us/aspnet/entity-framework" target="blank" rel="noreferrer">Entity_Framework</a>
   <a href="https://www.microsoft.com/en-us/sql-server" target="blank" rel="noreferrer"><img src="https://img.shields.io/badge/Microsoft%20SQL%20Server-CC2927?style=for-the-badge&logo=microsoft%20sql%20server&logoColor=white"/></a> 
 </div>
 
 ## Gallery
 <div align="center">
-    <img width="50%" src="#" alt="login"/>
+    <img width="50%" src="https://github.com/baemgao/CarParkingManagementSystem_Basic/blob/main/img/z4603904390778_758c6630ff141a3cfb182cb824332a24.jpg" alt="login"/>
     <p>Login page</p>
 </div>
 
 ## Contributions
 - [baemgao](https://github.com/baemgao)
 - [BaoAnhHo211](https://github.com/BaoAnhHo211)
-- Nguyễn Thành Phú
+- [PhuThanh001](https://github.com/PhuThanh001)
 - Trương Đình Thành
 
 ## License
