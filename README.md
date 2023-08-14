@@ -24,10 +24,10 @@ Within the framework of the PRN211 Software Engineering course at FPT University
 
 ## Tech Stack
 <div align="center">
-  <a href="https://learn.microsoft.com/en-us/dotnet/csharp/" target="blank" rel="noreferrer">Csharp</a>
-  <a href="https://dotnet.microsoft.com/en-us/" target="blank" rel="noreferrer">dotnet</a>
-  <a href="https://learn.microsoft.com/en-us/aspnet/entity-framework" target="blank" rel="noreferrer">Entity_Framework</a>
-  <a href="https://www.microsoft.com/en-us/sql-server" target="blank" rel="noreferrer"><img src="https://img.shields.io/badge/Microsoft%20SQL%20Server-CC2927?style=for-the-badge&logo=microsoft%20sql%20server&logoColor=white"/></a> 
+  <div><a href="https://learn.microsoft.com/en-us/dotnet/csharp/">Csharp</a>,
+  <a href="https://dotnet.microsoft.com/en-us/">dotnet</a>,
+  <a href="https://learn.microsoft.com/en-us/aspnet/entity-framework">Entity_Framework</a></div>
+  <div><a href="https://www.microsoft.com/en-us/sql-server" target="blank" rel="noreferrer"><img src="https://img.shields.io/badge/Microsoft%20SQL%20Server-CC2927?style=for-the-badge&logo=microsoft%20sql%20server&logoColor=white"/></a></div>
 </div>
 
 ## Gallery
