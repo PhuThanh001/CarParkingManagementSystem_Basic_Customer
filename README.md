@@ -24,9 +24,9 @@ Within the framework of the PRN211 Software Engineering course at FPT University
 
 ## Tech Stack
 <div align="center">
-  <div><a href="https://learn.microsoft.com/en-us/dotnet/csharp/">Csharp</a></div>div>
-  <div><a href="https://dotnet.microsoft.com/en-us/">dotnet</a></div>div>
-  <div><a href="https://learn.microsoft.com/en-us/aspnet/entity-framework">Entity_Framework</a></div>div>
+  <div><a href="https://learn.microsoft.com/en-us/dotnet/csharp/">Csharp</a>,
+  <a href="https://dotnet.microsoft.com/en-us/">dotnet</a>,
+  <a href="https://learn.microsoft.com/en-us/aspnet/entity-framework">Entity_Framework</a></div>
   <div><a href="https://www.microsoft.com/en-us/sql-server" target="blank" rel="noreferrer"><img src="https://img.shields.io/badge/Microsoft%20SQL%20Server-CC2927?style=for-the-badge&logo=microsoft%20sql%20server&logoColor=white"/></a></div>
 </div>
 
