@@ -9,7 +9,7 @@
 
   - [Introduction](#introduction)
   - [Tech Stack](#tech-stack)
-  - [Gallary](#gallery)
+  - [Gallery](#gallery)
   - [Contributions](#contributions)
   - [License](#license)
 
