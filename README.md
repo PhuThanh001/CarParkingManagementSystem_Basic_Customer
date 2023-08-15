@@ -33,7 +33,7 @@ Within the framework of the PRN211 Software Engineering course at FPT University
 ## Gallery
 <div align="center">
     <img width="50%" src="https://github.com/baemgao/CarParkingManagementSystem_Basic/blob/main/img/z4603904390778_758c6630ff141a3cfb182cb824332a24.jpg" alt="login"/>
-    <p>Login page</p>
+    <p>Login form</p>
 </div>
 
 ## Contributions
