@@ -40,7 +40,7 @@ Within the framework of the PRN211 Software Engineering course at FPT University
 - [baemgao](https://github.com/baemgao)
 - [BaoAnhHo211](https://github.com/BaoAnhHo211)
 - [PhuThanh001](https://github.com/PhuThanh001)
-- Trương Đình Thành
+- [slowbut-sure](https://github.com/slowbut-sure)
 
 ## License
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
