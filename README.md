@@ -1,4 +1,4 @@
-# CAR PARKING MANAGEMENT SYSTEM _ Csharp
+# CAR PARKING MANAGEMENT & BOOKING SYSTEM _ Csharp
 <div align="center">
     <img src="https://github.com/baemgao/CarParkingManagementSystem_Basic/blob/main/img/R.jpg" alt="Car parking management img"/>
 </div>
