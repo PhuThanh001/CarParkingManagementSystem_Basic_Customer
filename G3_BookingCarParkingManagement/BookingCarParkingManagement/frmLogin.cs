@@ -51,7 +51,7 @@ namespace BookingCarParkingManagement
                             && p.Password.Equals(password))
                     .FirstOrDefault();
 
-            if(user != null)
+            if (user != null)
             {
                 switch (user.Role)
                 {
