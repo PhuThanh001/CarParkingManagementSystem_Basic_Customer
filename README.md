@@ -1,4 +1,4 @@
-# CAR PARKING MANAGEMENT SYSTEM _ Csharp
+# CAR PARKING MANAGEMENT & BOOKING SYSTEM _ Csharp
 <div align="center">
     <img src="https://github.com/baemgao/CarParkingManagementSystem_Basic/blob/main/img/R.jpg" alt="Car parking management img"/>
 </div>
@@ -9,7 +9,7 @@
 
   - [Introduction](#introduction)
   - [Tech Stack](#tech-stack)
-  - [Gallary](#gallery)
+  - [Gallery](#gallery)
   - [Contributions](#contributions)
   - [License](#license)
 
@@ -33,14 +33,14 @@ Within the framework of the PRN211 Software Engineering course at FPT University
 ## Gallery
 <div align="center">
     <img width="50%" src="https://github.com/baemgao/CarParkingManagementSystem_Basic/blob/main/img/z4603904390778_758c6630ff141a3cfb182cb824332a24.jpg" alt="login"/>
-    <p>Login page</p>
+    <p>Login form</p>
 </div>
 
 ## Contributions
 - [baemgao](https://github.com/baemgao)
 - [BaoAnhHo211](https://github.com/BaoAnhHo211)
 - [PhuThanh001](https://github.com/PhuThanh001)
-- Trương Đình Thành
+- [slowbut-sure](https://github.com/slowbut-sure)
 
 ## License
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
