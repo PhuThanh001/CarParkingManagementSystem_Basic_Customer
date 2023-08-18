@@ -1,6 +1,6 @@
 ﻿namespace BookingCarParkingManagement
 {
-    partial class frmAdminScreen
+    partial class frmAdminHome
     {
         /// <summary>
         /// Required designer variable.
@@ -28,32 +28,37 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
+            dgvBaiXe = new DataGridView();
+            ((System.ComponentModel.ISupportInitialize)dgvBaiXe).BeginInit();
             SuspendLayout();
             // 
-            // label1
+            // dgvBaiXe
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(318, 198);
-            label1.Name = "label1";
-            label1.Size = new Size(120, 20);
-            label1.TabIndex = 0;
-            label1.Text = "frmAdminScreen";
+            dgvBaiXe.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvBaiXe.Location = new Point(12, 12);
+            dgvBaiXe.Name = "dgvBaiXe";
+            dgvBaiXe.RowHeadersWidth = 51;
+            dgvBaiXe.RowTemplate.Height = 29;
+            dgvBaiXe.Size = new Size(644, 244);
+            dgvBaiXe.TabIndex = 0;
+            dgvBaiXe.CellContentClick += dgvBaiXe_CellContentClick;
             // 
-            // frmAdminScreen
+            // frmAdminHome
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(label1);
-            Name = "frmAdminScreen";
-            Text = "frmAdminScreen";
+            BackColor = Color.White;
+            ClientSize = new Size(668, 458);
+            Controls.Add(dgvBaiXe);
+            Name = "frmAdminHome";
+            Text = "Admin Home";
+            Load += frmAdminHome_Load;
+            ((System.ComponentModel.ISupportInitialize)dgvBaiXe).EndInit();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
 
-        private Label label1;
+        private DataGridView dgvBaiXe;
     }
 }

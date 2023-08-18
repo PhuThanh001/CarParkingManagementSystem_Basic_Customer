@@ -66,7 +66,7 @@ namespace BookingCarParkingManagement
                         staffScreen.ShowDialog();
                         break;
                     case 3: // admin
-                        frmAdminScreen adminScreen = new frmAdminScreen();
+                        frmAdminHome adminScreen = new frmAdminHome();
                         this.Hide();
                         adminScreen.ShowDialog();
                         break;
