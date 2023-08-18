@@ -36,6 +36,8 @@
             label3 = new Label();
             btnLogin = new Button();
             btnCancel = new Button();
+            txtRegister = new LinkLabel();
+            label4 = new Label();
             SuspendLayout();
             // 
             // label1
@@ -60,14 +62,15 @@
             // 
             txtEmail.Location = new Point(157, 98);
             txtEmail.Name = "txtEmail";
-            txtEmail.Size = new Size(205, 27);
+            txtEmail.Size = new Size(251, 27);
             txtEmail.TabIndex = 2;
             // 
             // txtPassword
             // 
             txtPassword.Location = new Point(157, 145);
             txtPassword.Name = "txtPassword";
-            txtPassword.Size = new Size(205, 27);
+            txtPassword.PasswordChar = '*';
+            txtPassword.Size = new Size(251, 27);
             txtPassword.TabIndex = 3;
             // 
             // label3
@@ -82,9 +85,9 @@
             // 
             // btnLogin
             // 
-            btnLogin.Location = new Point(77, 202);
+            btnLogin.Location = new Point(94, 213);
             btnLogin.Name = "btnLogin";
-            btnLogin.Size = new Size(94, 29);
+            btnLogin.Size = new Size(99, 29);
             btnLogin.TabIndex = 5;
             btnLogin.Text = "Login";
             btnLogin.UseVisualStyleBackColor = true;
@@ -92,19 +95,49 @@
             // 
             // btnCancel
             // 
-            btnCancel.Location = new Point(244, 202);
+            btnCancel.Location = new Point(261, 213);
             btnCancel.Name = "btnCancel";
-            btnCancel.Size = new Size(94, 29);
+            btnCancel.Size = new Size(99, 29);
             btnCancel.TabIndex = 6;
             btnCancel.Text = "Cancel";
             btnCancel.UseVisualStyleBackColor = true;
+            btnCancel.Click += btnCancel_Click;
+            // 
+            // txtRegister
+            // 
+            txtRegister.ActiveLinkColor = Color.LightYellow;
+            txtRegister.AutoSize = true;
+            txtRegister.BackColor = SystemColors.ActiveBorder;
+            txtRegister.Font = new Font("Segoe UI Black", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            txtRegister.ForeColor = SystemColors.ActiveCaptionText;
+            txtRegister.LinkColor = Color.Red;
+            txtRegister.Location = new Point(272, 245);
+            txtRegister.Name = "txtRegister";
+            txtRegister.Size = new Size(70, 20);
+            txtRegister.TabIndex = 7;
+            txtRegister.TabStop = true;
+            txtRegister.Text = "Register";
+            txtRegister.LinkClicked += txtRegister_LinkClicked;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.BackColor = SystemColors.ActiveBorder;
+            label4.Location = new Point(102, 245);
+            label4.Name = "label4";
+            label4.Size = new Size(153, 20);
+            label4.TabIndex = 8;
+            label4.Text = "Do not have account?";
+            label4.Click += btnLogin_Click;
             // 
             // frmLogin
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
-            ClientSize = new Size(424, 251);
+            ClientSize = new Size(470, 288);
+            Controls.Add(label4);
+            Controls.Add(txtRegister);
             Controls.Add(btnCancel);
             Controls.Add(btnLogin);
             Controls.Add(label3);
@@ -128,5 +161,7 @@
         private Label label3;
         private Button btnLogin;
         private Button btnCancel;
+        private LinkLabel txtRegister;
+        private Label label4;
     }
 }

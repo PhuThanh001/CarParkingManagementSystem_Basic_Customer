@@ -1,4 +1,4 @@
-using Repository;
+﻿using Repository;
 using System.Text.RegularExpressions;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
@@ -79,9 +79,19 @@ namespace BookingCarParkingManagement
             else
             {
                 MessageBox.Show("Invalid username or password!", "Error", MessageBoxButtons.OK);
-                txtEmail.Focus();
+                txtEmail.Focus(); //đưa con trỏ chuột về lại 
                 return;
             }
         }
+
+        private void txtRegister_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.Hide();
+            frmRegister register = new frmRegister();
+            register.ShowDialog();
+            this.Show();
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e) => this.Close();
     }
 }

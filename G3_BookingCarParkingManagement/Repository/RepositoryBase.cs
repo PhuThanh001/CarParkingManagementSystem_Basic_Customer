@@ -10,7 +10,7 @@ namespace Repository
 
         public RepositoryBase()
         {
-            _context = new CarParkingManagementSystemContext();
+            _context = new BookingCarParkingManagementContext();
             _dbSet = _context.Set<T>();
         }
 

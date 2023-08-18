@@ -37,18 +37,14 @@ namespace DataObject.Models
             {
                 entity.ToTable("Baixe");
 
-                entity.Property(e => e.BaixeId)
-                    .ValueGeneratedNever()
-                    .HasColumnName("BaixeID");
+                entity.Property(e => e.BaixeId).HasColumnName("BaixeID");
             });
 
             modelBuilder.Entity<Book>(entity =>
             {
                 entity.ToTable("Book");
 
-                entity.Property(e => e.BookId)
-                    .ValueGeneratedNever()
-                    .HasColumnName("BookID");
+                entity.Property(e => e.BookId).HasColumnName("BookID");
 
                 entity.Property(e => e.BookingTime).HasColumnType("datetime");
 
@@ -82,9 +78,7 @@ namespace DataObject.Models
             {
                 entity.ToTable("Car");
 
-                entity.Property(e => e.CarId)
-                    .ValueGeneratedNever()
-                    .HasColumnName("CarID");
+                entity.Property(e => e.CarId).HasColumnName("CarID");
 
                 entity.Property(e => e.Bsx)
                     .HasMaxLength(20)
@@ -103,9 +97,7 @@ namespace DataObject.Models
             {
                 entity.ToTable("Slotxe");
 
-                entity.Property(e => e.SlotxeId)
-                    .ValueGeneratedNever()
-                    .HasColumnName("SlotxeID");
+                entity.Property(e => e.SlotxeId).HasColumnName("SlotxeID");
 
                 entity.Property(e => e.BaixeId).HasColumnName("BaixeID");
 
@@ -117,16 +109,16 @@ namespace DataObject.Models
 
             modelBuilder.Entity<User>(entity =>
             {
-                entity.Property(e => e.UserId)
-                    .ValueGeneratedNever()
-                    .HasColumnName("UserID");
+                entity.Property(e => e.UserId).HasColumnName("UserID");
 
                 entity.Property(e => e.Email)
                     .HasMaxLength(255)
                     .IsUnicode(false);
 
-                entity.Property(e => e.Name)
-                    .HasMaxLength(255)
+                entity.Property(e => e.Name).HasMaxLength(255);
+
+                entity.Property(e => e.Password)
+                    .HasMaxLength(50)
                     .IsUnicode(false);
 
                 entity.Property(e => e.Phone)
