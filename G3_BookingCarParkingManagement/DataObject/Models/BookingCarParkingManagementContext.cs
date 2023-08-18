@@ -38,6 +38,8 @@ namespace DataObject.Models
                 entity.ToTable("Baixe");
 
                 entity.Property(e => e.BaixeId).HasColumnName("BaixeID");
+
+                entity.Property(e => e.BaixeName).HasMaxLength(255);
             });
 
             modelBuilder.Entity<Book>(entity =>
