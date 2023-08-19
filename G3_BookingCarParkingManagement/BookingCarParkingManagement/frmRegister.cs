@@ -15,10 +15,10 @@ namespace BookingCarParkingManagement
 {
     public partial class frmRegister : Form
     {
-        public UserRpository _user { get; set; }
+        public UserRepository _user { get; set; }
         public frmRegister()
         {
-            _user = new UserRpository();
+            _user = new UserRepository();
             InitializeComponent();
         }
         private void btnRegister_Click(object sender, EventArgs e)

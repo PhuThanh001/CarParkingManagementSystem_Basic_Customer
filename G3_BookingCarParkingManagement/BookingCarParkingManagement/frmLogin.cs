@@ -6,10 +6,10 @@ namespace BookingCarParkingManagement
 {
     public partial class frmLogin : Form
     {
-        public UserRpository _user { get; set; }
+        public UserRepository _user { get; set; }
         public frmLogin()
         {
-            _user = new UserRpository();
+            _user = new UserRepository();
             InitializeComponent();
         }
 

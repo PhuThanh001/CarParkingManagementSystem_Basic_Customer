@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Repository
 {
-    public class UserRpository : RepositoryBase<User>
+    public class UserRepository : RepositoryBase<User>
     {
     }
 }
