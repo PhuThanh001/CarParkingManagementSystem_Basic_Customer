@@ -1,4 +1,6 @@
-﻿using System;
+﻿using DataObject.Models;
+using Repository;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +14,40 @@ namespace BookingCarParkingManagement.ChildOfStaffScreen
 {
     public partial class frmParkingSlot : Form
     {
+        BaixeRepository baixeRepository = new BaixeRepository();
+        SlotxeRepository slotxeRepository = new SlotxeRepository();
         public frmParkingSlot()
         {
             InitializeComponent();
+        }
+
+        private void frmParkingSlot_Load(object sender, EventArgs e)
+        {
+            pnParkingSlot.Visible = false;
+            var list = baixeRepository.GetAll();
+            List<string> parkingNameList = new List<string>();
+            foreach (Baixe baixe in list)
+            {
+                parkingNameList.Add(baixe.BaixeName);
+            }
+            cbxParking.DataSource = parkingNameList;
+        }
+
+        private void cbxParking_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            var parkingList = baixeRepository.GetAll();
+            Baixe parking = new Baixe();
+            foreach (Baixe baixe in parkingList)
+            {
+                if (baixe.BaixeName.Equals(cbxParking.Text))
+                {
+                    parking = baixe;
+                }
+            }
+            for (int i = 1; i <= parking.TotalSlot; i++)
+            {
+                
+            }
         }
     }
 }

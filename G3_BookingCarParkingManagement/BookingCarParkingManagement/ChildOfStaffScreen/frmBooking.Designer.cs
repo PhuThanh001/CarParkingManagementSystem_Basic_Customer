@@ -215,9 +215,9 @@
             // 
             // txtSearch
             // 
-            txtSearch.Location = new Point(92, 45);
+            txtSearch.Location = new Point(119, 45);
             txtSearch.Name = "txtSearch";
-            txtSearch.Size = new Size(180, 23);
+            txtSearch.Size = new Size(153, 23);
             txtSearch.TabIndex = 4;
             // 
             // cbxSearchBy
@@ -226,7 +226,7 @@
             cbxSearchBy.Items.AddRange(new object[] { "Booking ID", "Slot ID", "Car Number" });
             cbxSearchBy.Location = new Point(13, 45);
             cbxSearchBy.Name = "cbxSearchBy";
-            cbxSearchBy.Size = new Size(74, 23);
+            cbxSearchBy.Size = new Size(103, 23);
             cbxSearchBy.TabIndex = 3;
             // 
             // label8
