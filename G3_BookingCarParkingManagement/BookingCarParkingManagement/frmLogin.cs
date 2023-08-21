@@ -6,7 +6,10 @@ namespace BookingCarParkingManagement
 {
     public partial class frmLogin : Form
     {
+<<<<<<< HEAD
         IUserRepository users = new UserRepository();
+=======
+>>>>>>> NewUp/main
         public UserRepository _user { get; set; }
         public frmLogin()
         {
@@ -71,9 +74,9 @@ namespace BookingCarParkingManagement
                         staffScreen.ShowDialog();
                         break;
                     case 3: // admin
-                        frmAdminHome adminScreen = new frmAdminHome();
+                        frmUserManagement userManagement = new frmUserManagement();
                         this.Hide();
-                        adminScreen.ShowDialog();
+                        userManagement.ShowDialog();
                         break;
                     default:
                         MessageBox.Show("You are not allowed to access this function!", "Error", MessageBoxButtons.OK);

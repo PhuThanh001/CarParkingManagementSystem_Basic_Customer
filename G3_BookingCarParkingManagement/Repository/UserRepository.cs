@@ -1,14 +1,21 @@
+<<<<<<< HEAD
 ﻿using DataAccessObject;
 using DataObject.Models;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics.Metrics;
+=======
+﻿using DataObject.Models;
+using System;
+using System.Collections.Generic;
+>>>>>>> NewUp/main
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Repository
 {
+<<<<<<< HEAD
     public class UserRepository : IUserRepository
     {
         public List<Users> GetMembers() => CustomerDao.Instance.GetMembers();
@@ -24,5 +31,16 @@ namespace Repository
         public bool CheckEmailDuplicated(int memberID, string email) => CustomerDao.Instance.CheckEmailDuplicated(email);
 
         public void UpdateMember(Users m) => CustomerDao.Instance.UpdateMember(m);
+=======
+<<<<<<<< HEAD:G3_BookingCarParkingManagement/Repository/IBaixeRepository.cs
+    public interface IBaixeRepository
+========
+    public class UserRepository : RepositoryBase<User>
+>>>>>>>> NewUp/main:G3_BookingCarParkingManagement/Repository/UserRepository.cs
+    {
+        public List<Baixe> GetBaiXe();
+
+        List<Baixe> SearchProduct(string keyword, string type);
+>>>>>>> NewUp/main
     }
 }

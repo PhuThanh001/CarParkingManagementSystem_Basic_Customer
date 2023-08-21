@@ -12,7 +12,7 @@ namespace DataObject.Models
 
         public int BaixeId { get; set; }
         public string? BaixeName { get; set; }
-        public int? TotalSlot { get; set; }
+        public int TotalSlot { get; set; }
 
         public virtual ICollection<Slotxe> Slotxes { get; set; }
     }
