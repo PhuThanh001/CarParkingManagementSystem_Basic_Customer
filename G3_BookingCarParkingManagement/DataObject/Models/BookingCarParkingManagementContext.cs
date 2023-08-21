@@ -21,7 +21,7 @@ namespace DataObject.Models
         public virtual DbSet<Book> Books { get; set; } = null!;
         public virtual DbSet<Car> Cars { get; set; } = null!;
         public virtual DbSet<Slotxe> Slotxes { get; set; } = null!;
-        public virtual DbSet<Users> Users { get; set; } 
+        public virtual DbSet<Users> Users { get; set; } = null;
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
