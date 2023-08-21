@@ -109,9 +109,9 @@ namespace BookingCarParkingManagement
                 {
                     Close();
                 }
-            } catch (Exception e)
+            } catch (Exception ex)
             {
-                MessageBox.Show(e.Message, "Error", MessageBoxButtons.OK);
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK);
             }
         }
 
