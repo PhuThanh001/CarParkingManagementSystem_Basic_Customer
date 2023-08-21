@@ -7,7 +7,10 @@ using System.Threading.Tasks;
 
 namespace Repository
 {
-    public class UserRpository : RepositoryBase<User>
+    public interface IBaixeRepository
     {
+        public List<Baixe> GetBaiXe();
+
+        List<Baixe> SearchProduct(string keyword, string type);
     }
 }

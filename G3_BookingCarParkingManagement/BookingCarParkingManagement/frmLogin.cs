@@ -6,10 +6,11 @@ namespace BookingCarParkingManagement
 {
     public partial class frmLogin : Form
     {
-        public UserRpository _user { get; set; }
+        IUserRepository users = new UserRepository();
+        public UserRepository _user { get; set; }
         public frmLogin()
         {
-            _user = new UserRpository();
+            _user = new UserRepository();
             InitializeComponent();
         }
 
@@ -42,21 +43,25 @@ namespace BookingCarParkingManagement
                 return;
             }
 
-            if (!passwordIsValid)
+            /*if (!passwordIsValid)
             {
                 MessageBox.Show("Password must be at least 8 characters long and include a digit, an uppercase letter, and a special character", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
-            }
-            var user = _user.GetAll().Where(p => p.Email.Equals(email)
+            }*/
+            /*var user = users.GetMembers().Where(p => p.Email.Equals(email)
                             && p.Password.Equals(password))
-                    .FirstOrDefault();
+                    .FirstOrDefault();*/
+            var user = users.CheckLogin(email, password);
 
             if (user != null)
             {
                 switch (user.Role)
                 {
                     case 1: // customer
-                        frmCustomerScreen customerScreen = new frmCustomerScreen();
+                        frmCustomerScreen customerScreen = new frmCustomerScreen
+                        {
+                            UserLogin = user,
+                        };
                         this.Hide();
                         customerScreen.ShowDialog();
                         break;

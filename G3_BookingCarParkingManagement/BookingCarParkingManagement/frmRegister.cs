@@ -15,10 +15,10 @@ namespace BookingCarParkingManagement
 {
     public partial class frmRegister : Form
     {
-        public UserRpository _user { get; set; }
+        public UserRepository _user { get; set; }
         public frmRegister()
         {
-            _user = new UserRpository();
+            _user = new UserRepository();
             InitializeComponent();
         }
         private void btnRegister_Click(object sender, EventArgs e)
@@ -66,12 +66,12 @@ namespace BookingCarParkingManagement
 
             else
             {
-                var NewUser = new User();
+                var NewUser = new Users();
                 NewUser.Email = email;
                 NewUser.Password = password;
                 NewUser.Role = 1;
 
-                _user.Create(NewUser);
+                //_user.Create(NewUser);
                 MessageBox.Show("Register successfull", "Success", MessageBoxButtons.OK);
                 this.Hide();
                 frmLogin login = new frmLogin();

@@ -27,18 +27,18 @@ namespace BookingCarParkingManagement
 
         }
 
-        private void frmAdminHome_Load(object sender, EventArgs e)
+        /*private void frmAdminHome_Load(object sender, EventArgs e)
         {
             GetList();
-        }
+        }*/
         public void GetCarCountByBaixeId(int id)
         {
 
         }
 
-        public void GetList()
+       /* public void GetList()
         {
-            var listBaixe = _baixe.GetAll();
+            //var listBaixe = _baixe.GetAll();
             var slotxeIds = _slotxe.GetAll().Select(s => s.SlotxeId).ToList();
             dgvBaiXe.DataSource = listBaixe.Select(p => new
             {
@@ -46,6 +46,6 @@ namespace BookingCarParkingManagement
                 p.TotalSlot,
                 p.AvailableSlot
             }).ToList();
-        }
+        }*/
     }
 }

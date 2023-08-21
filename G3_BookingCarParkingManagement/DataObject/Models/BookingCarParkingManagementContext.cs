@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Security.Cryptography;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 
@@ -20,15 +21,16 @@ namespace DataObject.Models
         public virtual DbSet<Book> Books { get; set; } = null!;
         public virtual DbSet<Car> Cars { get; set; } = null!;
         public virtual DbSet<Slotxe> Slotxes { get; set; } = null!;
-        public virtual DbSet<User> Users { get; set; } = null!;
+        public virtual DbSet<Users> Users { get; set; } 
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)
             {
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-                optionsBuilder.UseSqlServer("Server=(local);uid=sa;pwd=12345;database=BookingCarParkingManagement;TrustServerCertificate=True");
+                optionsBuilder.UseSqlServer("server =(local); database = BookingCarParkingManagement;uid=sa;pwd=123456;TrustServerCertificate = True");
             }
+            
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -109,10 +111,11 @@ namespace DataObject.Models
                     .HasConstraintName("FK__Slotxe__BaixeID__4BAC3F29");
             });
 
-            modelBuilder.Entity<User>(entity =>
+            modelBuilder.Entity<Users>(entity =>
             {
-                entity.Property(e => e.UserId).HasColumnName("UserID");
+                entity.Property(e => e.UserId).ValueGeneratedNever();
 
+                entity.HasKey(e => e.UserId);
                 entity.Property(e => e.Email)
                     .HasMaxLength(255)
                     .IsUnicode(false);

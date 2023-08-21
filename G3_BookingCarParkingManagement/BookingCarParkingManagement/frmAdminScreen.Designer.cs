@@ -52,7 +52,7 @@
             Controls.Add(dgvBaiXe);
             Name = "frmAdminHome";
             Text = "Admin Home";
-            Load += frmAdminHome_Load;
+            //Load += frmAdminHome_Load;
             ((System.ComponentModel.ISupportInitialize)dgvBaiXe).EndInit();
             ResumeLayout(false);
         }
