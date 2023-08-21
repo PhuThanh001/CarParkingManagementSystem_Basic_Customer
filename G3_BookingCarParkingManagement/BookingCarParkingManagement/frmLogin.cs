@@ -66,9 +66,9 @@ namespace BookingCarParkingManagement
                         staffScreen.ShowDialog();
                         break;
                     case 3: // admin
-                        frmUserManagement adminScreen = new frmUserManagement();
+                        frmUserManagement userManagement = new frmUserManagement();
                         this.Hide();
-                        adminScreen.ShowDialog();
+                        userManagement.ShowDialog();
                         break;
                     default:
                         MessageBox.Show("You are not allowed to access this function!", "Error", MessageBoxButtons.OK);

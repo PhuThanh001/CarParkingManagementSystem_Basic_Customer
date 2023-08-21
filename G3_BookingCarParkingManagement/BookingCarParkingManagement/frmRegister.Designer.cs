@@ -66,6 +66,7 @@
             // label1
             // 
             label1.AutoSize = true;
+            label1.BackColor = Color.FromArgb(0, 0, 0, 0);
             label1.Location = new Point(76, 130);
             label1.Name = "label1";
             label1.Size = new Size(49, 20);
@@ -75,6 +76,7 @@
             // label2
             // 
             label2.AutoSize = true;
+            label2.BackColor = Color.FromArgb(0, 0, 0, 0);
             label2.Font = new Font("Segoe UI Black", 18F, FontStyle.Bold, GraphicsUnit.Point);
             label2.Location = new Point(216, 54);
             label2.Name = "label2";
@@ -85,6 +87,7 @@
             // label3
             // 
             label3.AutoSize = true;
+            label3.BackColor = Color.FromArgb(0, 0, 0, 0);
             label3.Location = new Point(76, 190);
             label3.Name = "label3";
             label3.Size = new Size(73, 20);
@@ -94,6 +97,7 @@
             // label4
             // 
             label4.AutoSize = true;
+            label4.BackColor = Color.FromArgb(0, 0, 0, 0);
             label4.Location = new Point(76, 255);
             label4.Name = "label4";
             label4.Size = new Size(130, 20);
@@ -124,6 +128,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.ControlDark;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(561, 384);
             Controls.Add(btnCancel);
