@@ -5,8 +5,8 @@ namespace Repository
 {
     public class RepositoryBase<T> where T : class
     {
-        private readonly BookingCarParkingManagementContext _context;
-        private readonly DbSet<T> _dbSet;
+        protected readonly BookingCarParkingManagementContext _context;
+        protected readonly DbSet<T> _dbSet;
 
         public RepositoryBase()
         {
