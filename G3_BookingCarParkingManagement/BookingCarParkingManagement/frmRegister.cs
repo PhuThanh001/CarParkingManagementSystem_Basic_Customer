@@ -66,12 +66,12 @@ namespace BookingCarParkingManagement
 
             else
             {
-                var NewUser = new User();
+                var NewUser = new Users();
                 NewUser.Email = email;
                 NewUser.Password = password;
                 NewUser.Role = 1;
 
-                _user.Create(NewUser);
+                //_user.Create(NewUser);
                 MessageBox.Show("Register successfull", "Success", MessageBoxButtons.OK);
                 this.Hide();
                 frmLogin login = new frmLogin();
