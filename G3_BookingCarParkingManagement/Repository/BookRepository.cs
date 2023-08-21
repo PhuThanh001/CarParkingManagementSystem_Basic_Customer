@@ -9,5 +9,10 @@ namespace Repository
 {
     public class BookRepository : RepositoryBase<Book>
     {
+        public IEnumerable<Book> GetAll()
+        {
+            return _dbSet.ToList();
+        }
+
     }
 }
