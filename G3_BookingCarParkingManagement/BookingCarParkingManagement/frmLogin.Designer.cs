@@ -43,35 +43,33 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(51, 76);
+            label1.Location = new Point(58, 101);
             label1.Name = "label1";
-            label1.Size = new Size(39, 15);
+            label1.Size = new Size(49, 20);
             label1.TabIndex = 0;
             label1.Text = "Email:";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(51, 111);
+            label2.Location = new Point(58, 148);
             label2.Name = "label2";
-            label2.Size = new Size(60, 15);
+            label2.Size = new Size(73, 20);
             label2.TabIndex = 1;
             label2.Text = "Password:";
             // 
             // txtEmail
             // 
-            txtEmail.Location = new Point(137, 74);
-            txtEmail.Margin = new Padding(3, 2, 3, 2);
+            txtEmail.Location = new Point(157, 99);
             txtEmail.Name = "txtEmail";
-            txtEmail.Size = new Size(220, 23);
+            txtEmail.Size = new Size(251, 27);
             txtEmail.TabIndex = 2;
             // 
             // txtPassword
             // 
-            txtPassword.Location = new Point(137, 109);
-            txtPassword.Margin = new Padding(3, 2, 3, 2);
+            txtPassword.Location = new Point(157, 145);
             txtPassword.Name = "txtPassword";
-            txtPassword.Size = new Size(220, 23);
+            txtPassword.Size = new Size(251, 27);
             txtPassword.TabIndex = 3;
             txtPassword.UseSystemPasswordChar = true;
             // 
@@ -80,18 +78,17 @@
             label3.AutoSize = true;
             label3.FlatStyle = FlatStyle.Flat;
             label3.Font = new Font("Segoe UI Black", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            label3.Location = new Point(103, 28);
+            label3.Location = new Point(118, 37);
             label3.Name = "label3";
-            label3.Size = new Size(183, 32);
+            label3.Size = new Size(233, 41);
             label3.TabIndex = 4;
             label3.Text = "Welcome back";
             // 
             // btnLogin
             // 
-            btnLogin.Location = new Point(82, 160);
-            btnLogin.Margin = new Padding(3, 2, 3, 2);
+            btnLogin.Location = new Point(94, 213);
             btnLogin.Name = "btnLogin";
-            btnLogin.Size = new Size(87, 22);
+            btnLogin.Size = new Size(99, 29);
             btnLogin.TabIndex = 5;
             btnLogin.Text = "Login";
             btnLogin.UseVisualStyleBackColor = true;
@@ -99,10 +96,9 @@
             // 
             // btnCancel
             // 
-            btnCancel.Location = new Point(228, 160);
-            btnCancel.Margin = new Padding(3, 2, 3, 2);
+            btnCancel.Location = new Point(261, 213);
             btnCancel.Name = "btnCancel";
-            btnCancel.Size = new Size(87, 22);
+            btnCancel.Size = new Size(99, 29);
             btnCancel.TabIndex = 6;
             btnCancel.Text = "Cancel";
             btnCancel.UseVisualStyleBackColor = true;
@@ -116,9 +112,9 @@
             txtRegister.Font = new Font("Segoe UI Black", 9F, FontStyle.Bold, GraphicsUnit.Point);
             txtRegister.ForeColor = SystemColors.ActiveCaptionText;
             txtRegister.LinkColor = Color.Red;
-            txtRegister.Location = new Point(238, 184);
+            txtRegister.Location = new Point(272, 245);
             txtRegister.Name = "txtRegister";
-            txtRegister.Size = new Size(57, 15);
+            txtRegister.Size = new Size(70, 20);
             txtRegister.TabIndex = 7;
             txtRegister.TabStop = true;
             txtRegister.Text = "Register";
@@ -128,9 +124,9 @@
             // 
             label4.AutoSize = true;
             label4.BackColor = SystemColors.ActiveBorder;
-            label4.Location = new Point(89, 184);
+            label4.Location = new Point(113, 245);
             label4.Name = "label4";
-            label4.Size = new Size(122, 15);
+            label4.Size = new Size(153, 20);
             label4.TabIndex = 8;
             label4.Text = "Do not have account?";
             label4.Click += btnLogin_Click;
@@ -138,10 +134,10 @@
             // frmLogin
             // 
             AcceptButton = btnLogin;
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
-            ClientSize = new Size(411, 216);
+            ClientSize = new Size(470, 288);
             Controls.Add(label4);
             Controls.Add(txtRegister);
             Controls.Add(btnCancel);
@@ -151,7 +147,6 @@
             Controls.Add(txtEmail);
             Controls.Add(label2);
             Controls.Add(label1);
-            Margin = new Padding(3, 2, 3, 2);
             Name = "frmLogin";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Login";
